@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Newsletter sign-up</title>
+      
+        <style>
+          .attribution { color: white; font-size: 11px; text-align: center; font-weight: normal; }
+          .attribution a { color: hsl(4, 100%, 67%); }
+        </style>
+    </head>
+    <body>
+        <main class="container container-signup">
+        </main>
+        <template id="template_1">
+            <section class="section-right">
+                <picture>
+                    <source media="(min-width:576px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+                    <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+                </picture>
+            </section>
+            <section class="section-left">
+                <h1 class="heading">Stay updated!</h1>
+                <p class="text">Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul class="section-left__list">
+                    <li class="section-left__list-item">Product discovery and building what matters</li>
+                    <li class="section-left__list-item">Measuring to ensure updates are a success</li>
+                    <li class="section-left__list-item">And much more!</li>
+                </ul>
+                <form action="" class="form form--main">
+                    <div class="form__label">
+                        <span class="form__label-left">Email address</span>
+                        <span class="form__label-right form__label--error"> Valid email required</span>
+                    </div>
+                    <input type="text" name="" class="form__text" placeholder="email@company.com">
+                    <input type="submit" value="Subscribe to monthly newsletter" class="form__button">
+                </form>
+        </template>
+        <template id="template_2">
+            <div class="img--container">
+                <img src="assets/images/icon-success.svg" alt="">
+            </div>
+            <h1 class="heading">Thanks for subscribing!</h1>
+            <p class="text">A confirmation email has been sent to <span class="user-mail">example@gmail.com</span>.Please open it and click the button inside to confirm your subscription.</p>
+            <form action="" class="form form--success">
+                <input type="submit" value="Dismiss" class="form__button form__button--success">
+            </form>
+        </template>
+        <footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        </footer>
+        <script src="app.js"></script>
+
+    </body>
+</html>
